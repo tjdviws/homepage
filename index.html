@@ -1,89 +1,196 @@
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>Title Page</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Title Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
-    <body>
+    <style>
+        .thumbnail {
+            background-color: #000;
+        }
         
-        
+        .thumbnail .caption h2 {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-3">
-                    
-                    <div class="thumbnail">
-                        <img src="https://picsum.photos/200/200/?random=1">
-                        <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
-                            <p>
-                                <a href="#" class="btn btn-info">加入購物車</a>
-                                <a href="#" class="btn btn-default">下次再買</a>
-                            </p>
-                        </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">選單切換</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">CSS可樂</a>
+            </div>
+
+            <!-- 手機隱藏選單區 -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <!-- 左選單 -->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">關於CSS可樂</a></li>
+                    <li><a href="#">CSS教學</a></li>
+                    <li><a href="#">CSS範例</a></li>
+                    <li><a href="#">原創CSS</a></li>
+                </ul>
+
+                <!-- 搜尋表單 -->
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="請輸入關鍵字">
                     </div>
-                    
+                    <button type="submit" class="btn btn-default">搜尋</button>
+                </form>
+
+                <!-- 右選單 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Amos 您好</a></li>
+                    <li><a href="#">登出</a></li>
+                    <li><a href="#">個人設定</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">繁體中文 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">繁體中文</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">日本語</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 手機隱藏選單區結束 -->
+        </div>
+    </nav>
+
+
+    <div id="carousel-id" class="carousel slide" data-ride="carousel">
+        <!-- 幻燈片小圓點區 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+        </ol>
+        <!-- 幻燈片主圖區 -->
+        <div class="carousel-inner">
+            <div class="item">
+                <img src="https://api.fnkr.net/testimg/2800x700/aaaaaa" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>CSS可樂好喝超爽快</h1>
+                        <p>你喝過了嗎？</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-3">
-                    
-                    <div class="thumbnail">
-                        <img src="https://picsum.photos/200/200/?random=2">
-                        <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
-                            <p>
-                                <a href="#" class="btn btn-info">加入購物車</a>
-                                <a href="#" class="btn btn-default">下次再買</a>
-                            </p>
-                        </div>
+            </div>
+            <div class="item">
+                <img src="https://api.fnkr.net/testimg/2800x700/aaaaaa" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>CSS可樂的外掛真方便</h1>
+                        <p>你安裝了嗎？</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">更多</a></p>
                     </div>
-                    
                 </div>
-                <div class="col-xs-12 col-sm-3">
-                    
-                    <div class="thumbnail">
-                        <img src="https://picsum.photos/200/200/?random=3">
-                        <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
-                            <p>
-                                <a href="#" class="btn btn-info">加入購物車</a>
-                                <a href="#" class="btn btn-default">下次再買</a>
-                            </p>
-                        </div>
+            </div>
+            <div class="item active">
+                <img src="https://api.fnkr.net/testimg/2800x700/aaaaaa" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>我是標題喔～自己改文案吧</h1>
+                        <p>我是內文喔，你可以把字打在這裡呦</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">詳細內容</a></p>
                     </div>
-                    
-                </div>
-                <div class="col-xs-12 col-sm-3">
-                    
-                    <div class="thumbnail">
-                        <img src="https://picsum.photos/200/200/?random=4">
-                        <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
-                            <p>
-                                <a href="#" class="btn btn-info">加入購物車</a>
-                                <a href="#" class="btn btn-default">下次再買</a>
-                            </p>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </div>
-        
-        
-        
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </body>
+        <!-- 上下頁控制區 -->
+        <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=1">
+                    <div class="caption">
+                        <h2>資二1余文琴21</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=2">
+                    <div class="caption">
+                        <h2>資二1余文琴21</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=3">
+                    <div class="caption">
+                        <h2>資二1余文琴21</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="thumbnail">
+                    <img src="https://picsum.photos/200/200/?random=4">
+                    <div class="caption">
+                        <h2>資二1余文琴21</h2>
+                        <p>內文</p>
+                        <p>
+                            <a href="#" class="btn btn-info">加入購物車</a>
+                            <a href="#" class="btn btn-default">下次再買</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
 </html>
